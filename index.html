@@ -10,27 +10,31 @@
 </head>
 <body>
     
+    <!-- CONTAINER HEADER -->
+
     <div class="container-header">
 
         <header class="header">
-            <a href="#" class="logo">Thiago<span>.</span></a>
+            <a href="#home" class="logo">Thiago<span>.</span></a>
             <div class="container-menu">
                 <i class='bx bx-menu-alt-right'></i>
             </div>
             <nav class="navbar">
-                <a href="#" class="nav-link">Inicio</a>
-                <a href="#" class="nav-link">Sobre mi</a>
-                <a href="#" class="nav-link">Proyectos</a>
-                <a href="#" class="nav-link">Contacto</a>
+                <a href="#home" class="nav-link active">Inicio</a>
+                <a href="#aboutme" class="nav-link">Sobre mi</a>
+                <a href="#portfolio" class="nav-link">Portafolio</a>
+                <a href="#contact" class="nav-link">Contacto</a>
             </nav>
         </header>
 
     </div>
 
-    <section class="home">
+    <!-- SECTION HOME -->
+
+    <section class="home" id="home">
 
         <div class="img-home">
-            <img src="">
+            <img src="./images/yo.jpg">
         </div>
 
         <div class="contenido-home">
@@ -44,13 +48,15 @@
 
             <div class="botones">
                 <a href="#" class="btn">Curriculum<i class='bx bx-file'></i></a>
-                <a href="#" class="btn">Portafolio<i class='bx bx-right-arrow-alt' ></i></a>
+                <a href="#portfolio" class="btn">Portafolio<i class='bx bx-right-arrow-alt' ></i></a>
             </div>
         </div>
 
     </section>
 
-    <section class="aboutme">
+    <!-- SECTION SOBRE MI -->
+
+    <section class="aboutme" id="aboutme">
 
         <div class="aboutme__content">
             <h2>Sobre mi<span>.</span></h2>
@@ -108,7 +114,9 @@
         
     </section>
 
-    <section class="portfolio">
+    <!-- SECTION PORTAFOLIO -->
+
+    <section class="portfolio" id="portfolio">
         <div class="portfolio__content">
             <h2>Portafolio<span>.</span></h2>
 
@@ -191,32 +199,34 @@
         
     </section>
 
+    <!-- SECTION CONTACTO -->
+
     <section class="contact" id="contact">
         <h2 class="heading">Contacto<span>.</span></h2>
 
-        <form action="#">
+        <form action="https://formsubmit.co/thiagoborda7@gmail.com" method="POST">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Nombre complato" required>
+                    <input type="text" name="text" placeholder="Nombre completo" required>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
                 </div>
             </div>
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Teléfono" required>
+                    <input type="number" name="number" placeholder="Teléfono" required>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="Pais" required>
+                    <input type="text" name="text" placeholder="Pais" required>
                 </div>
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Escriba su mensaje" required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Escriba su mensaje" required></textarea>
                 <span class="focus"></span>
             </div>
 
@@ -226,6 +236,7 @@
         </form>
     </section>
 
+    <!-- FOOTER -->
 
     <footer class="footer">
         <div class="footer-text">
